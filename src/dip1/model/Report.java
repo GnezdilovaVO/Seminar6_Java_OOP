@@ -5,8 +5,12 @@ import dip1.model.util.ReportPrinter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Report{
+public class Report {
     private List<ReportItem> items;	// report data
+
+    public List<ReportItem> getItems() {
+        return items;
+    }
 
     // calculate report data
     public void calculate(){
@@ -15,8 +19,4 @@ public class Report{
         items.add(new ReportItem("Second", (float)6));
     }
 
-    public void output(){
-        ReportPrinter reportPrint = new ReportPrinter();
-        reportPrint.output(items);
-    }
 }

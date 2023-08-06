@@ -1,16 +1,17 @@
 package lsp1.view;
 
-import lsp1.shape.Rectangle;
+import lsp1.Quadreliteral;
+
 
 public class ShapeView {
-    private final Rectangle rectangle;
+    private final Quadreliteral quadreliteral;
 
-    public ShapeView(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    public ShapeView(Quadreliteral quadreliteral) {
+        this.quadreliteral = quadreliteral;
     }
 
     public void showArea() {
         System.out.print("Area of rectangle equal:");
-        System.out.println(rectangle.getArea());
+        System.out.println(quadreliteral.getArea());
     }
 }
